@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #heading h2{
+        color:blue;
+    }
+    #container{
+        min-width:640px;
+        max-width: 800px;
+        margin: auto;
+        width:100%;
+    }
+    header {
+        background-color: #9898FF;
+    }
+    .menu span{
+        display: inline-block;
+        padding:5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-transform: uppercase;
+        color:rgb(85, 26, 139);        
+    }
+    .menu span a, h3 a{
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    #heading{
+        float:left;
+        margin-top: .5em;
+        margin-left: 1.5em;
+    }
+    #search{
+        width:153px;
+        float:right;
+    }
+    .menu{
+        clear: right;
+    }
+    article h2{
+        text-align: center;
+    }
+    hr{
+        height: 5px;
+        background-color: rgb(150,150,150);
+        border: 0;
+        width: 80%;
+    }
+    .hot_picks .pick{
+        display: inline-block;
+        width: 30%;
+        padding:8px;
+        text-align: center;
+    }
+    .hot_picks .pick p{
+        text-align: initial;
+    }
+</style>
+<body>
+    <div id="container">
+        <header>
+            <div class="banner">
+                <div id="heading"><h2>Basic Web Resource Site</h2></div>
+                <div id="search">
+                    <h3>BWR Search</h3>
+                    <input type="text"/>
+                    <button>Go !</button>
+                </div>
+            </div>
+            <div class="menu">
+                <span><a href="#">Home</a></span>
+                <span><a href="tutorials/index.html">Tutorials</a></span>
+                <span><a href="links.html">Links</a></span>
+                <span><a href="forum.html">Forum</a></span>
+                <span><a href="glossary.html" target="_blank">Glossary</a></span>
+                <span><a href="news.html">News</a></span>
+            </div>
+        </header>
+        <article>
+            <h2>Welcome To The
+                Basic Web
+                Resource Site</h2>
+            <p>We aim to provide help and advice for people wanting to build their own website from complete novice to power users. Our Tutorials take you through every stage of building a website from a simple text page for complete beginners to more advanced topics like Streaming media & JavaScript. And we concentrate using programs which are free & you should already have on your computer.</p>
+            <p>We're still in the process of updating our site so aplogises for any errors</p>
+            <h1>MAIN AREAS</h1>
+            <h3><a href="tutorials/index.html">TUTORIALS</a></h3>
+            <p>Our Tutorial cover all the skills you'll need to create a great web site from beginners guides to adding video, JavaScript. We've divided it into 3 groups. Our <a href="tutorials/index.html">main tutorials</a> which feature comprehensive guides for creating web pages using HTML, Frontpage Express and Composer for all levels of users. Our <a href="tutorials/other.html"> other tutorials</a> which look at other web design skills not directly related to page building such as streaming media, creating web videos, FTP, site hosting and promotion. Whilst our <a href="tutorials/howto.html">Cool tips</a> gives tons of quick and easy ideas to add to your site from JavaScript clocks and timers, slideshows and password protected pages</p>
+            <h3><a href="links.html">LINKS</a></h3>
+            <p>Our Comprehensive list of useful sites for web design for both novices and experienced alike</p>
+            <h3><a href="forum.html">HELP/FORUM</a></h3>
+            <p>Welcome to our new help forum relating to all aspects covered by this site. Your chance to view others views and advice or you could post a question or a reply yourself. It contains our old FAQs</p>
+            <h3><a href="glossary.html">GLOSSARY</a></h3>
+            <p>Our ever expanding Glossary of common web terms. Handy if you want to know your DNS from your PNG</p>
+            <h3><a href="news.html">NEWS</a></h3>
+            <p>Radically stripped down but still a place to come.</p>
+            <p>Feature now our Top 10 freeware list as well as site news            </p>
+        </article>
+        <hr/>
+        <h2><em>HOT PICKS</em></h2>
+        <div class="hot_picks">
+            <div class="pick">
+                <h5>Video Tutorials</h5>
+                <a href="http://www.fluffbucket.co.uk/othettutorials/video/index.htm"><img  src="http://www.fluffbucket.co.uk/grapix/vidcam.jpg" alt="Video Tutorials"/></a>
+                <p>Our condensed guide on what you need to make web video and how you go about it</p>
+            </div>
+            <div class="pick">
+                <h5>Quick JavaScript Clock</h5>
+                <div>Sun Dec 31 2023 10:02:51 GMT+0630 (Myanmar Time)</div>
+                <p>Want to add a quick time and date script to your webpages like the one above? Then check out this quick cool tip</p>
+            </div>
+            <div class="pick">
+                <h5>Disable right clicking</h5>
+                <a href="http://www.fluffbucket.co.uk/howto/norightclick.htm"><img  src="http://www.fluffbucket.co.uk/grapix/noclick.gif" alt="Disable right clicking"/></a>
+                <p>One of current cool tips favourites is the script to stop people right clicking and pinching your images etc.</p>
+            </div>
+        </div>
+        <p>This site is not endorsed or endorses either Microsoft® or Netscape products or any other products mentioned within</p>
+    </div>
+</body>
+</html>
