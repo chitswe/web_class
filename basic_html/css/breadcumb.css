@@ -1,0 +1,24 @@
+ul.breadcumb{
+    padding: 8px;
+    background-color: rgb(220,220,220);
+    display: inline-block;
+    margin:4px 0;
+}
+ul.breadcumb li{
+    display: inline-block;
+    margin-left: 4px;
+}
+ul.breadcumb li::before{
+    content: '>';
+    margin:8px;
+}
+
+ul.breadcumb li:first-child:before{
+    content: none;
+}
+ul.breadcumb li a{
+    text-decoration: none;
+}
+ul.breadcumb li a:hover{
+    text-decoration: undexrline;
+}
