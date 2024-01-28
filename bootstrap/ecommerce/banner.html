@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bs/css/bootstrap.css" />
+    <script src="../bs/js/bootstrap.js"></script>
+    <style>
+        .banner {
+            width: 500px;
+            height: 276px;
+            position: relative;
+        }
+        .banner .banner-content{
+        }
+        .background-pic{    
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-size: 50%;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left:0;
+            right:0;
+            width: auto;
+            z-index: -1;
+        }
+        .background-pic.banner{
+            background-color: #7733D2;   
+            background-image: url(./img/whooping_banner_shape_2.png);                 
+            background-position: bottom left;
+            z-index: -2;
+        }
+        .background-pic.speaker{
+            background-image: url(./img/whooping_banner_product.png);                 
+            background-position: bottom right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner border rounded  mt-4 mx-auto">
+        <div class="background-pic banner"></div>
+        <div class="background-pic speaker"></div>
+        <div class="mt-5 ml-5 banner-content">
+            <h2>Whooping 60% Off</h2>
+            <h3>on everyday items</h3>
+            <button class="btn btn-primary rounded-pill mt-2">Show Now</button>
+        </div>
+    </div>
+</body>
+
+</html>

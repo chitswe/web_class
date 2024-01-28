@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links</title>
+    <style>
+        .row {
+            display: flex;
+            border:1px solid black;
+            align-items: center;
+        }
+
+        .link {
+            width: 126px;
+            padding: 12px;
+            flex-shrink: 0;
+            text-align: center;
+        }
+        .container{
+            width:860px;
+            margin:auto;
+        }
+        .row .link h5{
+            margin: 0;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Links</h1>
+    <div class="container">
+        <h1>Links</h1>
+        <div class="row">
+            <div class="link">General Advice Links</div>
+            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iste quod eum facilis omnis
+                consequatur magnam, corrupti pariatur enim adipisci, laboriosam repellat eos numquam, deserunt quidem
+                tempora dolorum nemo! Voluptatum?</div>
+        </div>
+        <div class="row">
+            <div class="link">
+                <h5>Site News</h5>
+                <img src="http://www.fluffbucket.co.uk/grapix/XAAB5322.gif" width="75" height="75" border="0" alt="Frontpage Express Tutorials">
+            </div>
+            <div class="text">Whats on the go with our site</div>
+        </div>
+    </div>
 </body>
+
 </html>

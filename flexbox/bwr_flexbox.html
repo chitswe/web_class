@@ -4,34 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar&family=Poppins:ital,wght@0,100;0,400;0,500;1,200&display=swap" rel="stylesheet">
+    <style>
+        #container{
+            width: 100%;
+            max-width: 800px;
+            min-width: 640px;
+            margin:auto;
+        }
+        #header{
+            background-color: #9898FF;
+            padding:8px;
+        }
+        .banner{
+            display: flex;
+        }
+        #heading{
+            flex:1;
+            
+        }
+        #search{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            align-items: center;
+        }
+        #search button{
+            flex-grow: 0;
+        }
+        .menu{
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-between;
+            padding:8px;
+        }
+        .hot_picks{
+            display: flex;
+        }
+        .hot_picks .pick{
+            text-align: center;
+        }
+    </style>
 </head>
-<style>
-    *{
-        font-family: 'Poppins','Noto Sans Myanmar', sans-serif;
-    }
-    article h2{
-        text-align: center;
-    }
-    hr{
-        height: 5px;
-        background-color: rgb(150,150,150);
-        border: 0;
-        width: 80%;
-    }
-    .hot_picks .pick{
-        display: inline-block;
-        width: 30%;
-        padding:8px;
-        text-align: center;
-    }
-    .hot_picks .pick p{
-        text-align: initial;
-    }
-</style>
 <body>
     <div id="container">
         <header id="header">
@@ -52,10 +65,6 @@
                 <span><a href="news.html">News</a></span>
             </div>
         </header>
-        <a href="#hot_picks">Go to Hot Picks</a>
-        <blockquote>
-            လူခပ်သိမ်း၏ မျိုးရိုးဂုဏ်သိက္ခာနှင့်တကွ လူတိုင်းအညီအမျှခံစားခွင့်ရှိသည့် အခွင့်အရေးများကို....
-        </blockquote>
         <article>
             <h2>Welcome To The
                 Basic Web
@@ -96,6 +105,6 @@
         </div>
         <p>This site is not endorsed or endorses either Microsoft® or Netscape products or any other products mentioned within</p>
     </div>
-    <a href="#header">Back to Top</a>
+    </div>
 </body>
 </html>
