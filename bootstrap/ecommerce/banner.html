@@ -9,13 +9,18 @@
     <script src="../bs/js/bootstrap.js"></script>
     <style>
         .banner {
-            width: 500px;
-            height: 276px;
             position: relative;
+        }   
+        .banner button{
+            margin-bottom: 100px;
         }
+        
         .banner .banner-content{
+            padding-top: 75px;
+            padding-left:75px;
         }
-        .background-pic{    
+
+        #everyday .background-pic{    
             background-size: contain;
             background-repeat: no-repeat;
             background-size: 50%;
@@ -27,27 +32,79 @@
             width: auto;
             z-index: -1;
         }
-        .background-pic.banner{
+        #everyday .banner-content h2 span{
+            background:linear-gradient(181.55deg, rgba(255, 158, 158, 0.7) 3.21%, rgba(255, 80, 237, 0.7) 68.35%, rgba(210, 30, 255, 0.7) 98.68%, rgba(255, 80, 237, 0.7) 98.69%),#fff;
+            background-clip: text;
+            color:transparent 
+        }
+        #everyday .background-pic.banner{
             background-color: #7733D2;   
             background-image: url(./img/whooping_banner_shape_2.png);                 
             background-position: bottom left;
             z-index: -2;
         }
-        .background-pic.speaker{
+        #everyday .background-pic.speaker{
             background-image: url(./img/whooping_banner_product.png);                 
             background-position: bottom right;
+        }
+        #gift.banner{
+            background-image: url(./img/gift-items-banner-bg.png);  
+            background-position:center; 
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+        #gift .banner-content h2 span{
+            background:linear-gradient(197.02deg, #28e4ff 11.41%, rgba(97, 198, 255, 0) 107.7%);
+            background-clip: text;
+            color:transparent 
+        }
+        #phone.banner{
+            background-image: url(./img/best-in-market-bg.png);  
+            background-position:center; 
+            background-size:cover;
+            background-repeat: no-repeat;
         }
     </style>
 </head>
 
 <body>
-    <div class="banner border rounded  mt-4 mx-auto">
-        <div class="background-pic banner"></div>
-        <div class="background-pic speaker"></div>
-        <div class="mt-5 ml-5 banner-content">
-            <h2>Whooping 60% Off</h2>
-            <h3>on everyday items</h3>
-            <button class="btn btn-primary rounded-pill mt-2">Show Now</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="everyday" class="banner border rounded  mt-3 mx-auto">
+                    <div class="background-pic banner"></div>
+                    <div class="background-pic speaker"></div>
+                    <div class="banner-content">
+                        <h2>Whooping <span class="gradient-text">60% </span>Off</h2>
+                        <h3 class="text-light">on everyday items</h3>
+                        <button class="btn btn-primary rounded-pill mt-2 ">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-6">
+                <div id="gift" class="banner border rounded  mt-3 mx-auto ">
+                    <div class="banner-content">
+                        <h2 class="text-light">Get <span class="gradient-text">10% Off</span> 
+                            <br class="d-md-none"/>
+                            on gift items</h2>
+                        <button class="btn btn-primary rounded-pill mt-2 ">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-6 ">
+                <div id="phone" class="banner border rounded d-flex mt-3  mx-auto ">
+                    <div class="row banner-content">
+                        <div class=" col-8">
+                            <h1 class="text-light">MI 11 Pro</h1>
+                            <h3 class="text-light">Best in the market</h3>
+                            <button class="btn btn-primary rounded-pill mt-2 ">Buy Now</button>
+                        </div>
+                        <div class="col-4">
+                            <img class="w-100 " src="./img/phone.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
