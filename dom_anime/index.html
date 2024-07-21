@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <style>
+        #box {
+            position: relative;
+            width: 800px;
+            height: 30px;
+            background: skyblue;
+            border: 5px solid darkblue;
+        }
+
+        #ball {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            background-color: red;
+        }
+    </style>
+    <script>
+        var left = 0;
+        function push_ball(){
+            var step = 10;
+            if (left>=800 - 30) left=0;
+            else
+                left += step;
+            var ball = document.querySelector("#ball");
+            ball.style.left = `${left}px`;
+        }
+        setInterval(push_ball,5);
+    </script>
+</head>
+
+<body>
+    <div id="box">
+        <div id="ball"></div>
+    </div>
+    <button onclick="push_ball()">Push Ball</button>
+</body>
+
+</html>
